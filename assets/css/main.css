@@ -169,19 +169,22 @@ nav.solid #logo .logo {
 
 
 #promocion{
-	margin-top: 80px;
+  margin-top: 80px;
+  margin-left: 50px;
+  margin-right: 50px;
 	display: grid; 
-  grid-template-columns: 100px 100px 100px; 
-  grid-gap: 10px; 
+  grid-template-columns: 490px 490px 490px; 
   background-color: #fff; 
   color: #444;
 
 }
 
-.image {
-	margin: -2px;
-	width: 300px;
-  	height: 300px;
-	position: absolute;
-	background-size: border-box;
+img {
+  padding: 0px;
+	margin: 0px;
+  display: inline-block;
+  width: 490px;
+  height: 490px;
+	position: relative;
+  box-sizing: content-box;
 }

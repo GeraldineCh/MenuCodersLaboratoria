@@ -25,3 +25,4 @@ window.addEventListener("scroll", function(){
 }, false);
 
 //GRID PARA LA PROMO
+//Fotos
