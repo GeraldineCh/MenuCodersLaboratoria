@@ -1,3 +1,4 @@
+/*NAVEGADOR*/
 nav{
   top: 0;
   left: 0;
@@ -10,6 +11,7 @@ nav{
   padding-top: 0px;
   background: none;
   transition: all 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
+  background-color: gray;
 }
 
 .header-in{
@@ -23,7 +25,7 @@ nav .nav-background {
   width: 100%;
   height: 100%;
   z-index: 1500;
-  display: table;
+  display: none;
   background: none;
   position: absolute;
   transition: background-color 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
@@ -51,7 +53,7 @@ nav ul {
   display: table-cell;
   vertical-align: middle;
   transform: perspective(600px) rotateX(10deg);
-  transition: all 0.5s cubic-bezier(0.7, 0, 0.36, 0.63);
+  transition: all 0.45s cubic-bezier(0.7, 0, 0.36, 0.63);
 }
 nav ul li{
   visibility: hidden;
@@ -95,7 +97,7 @@ nav.open ul li {
   text-align: left;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  background-image: url(../img/laboratoria.jpg);
+  background-image: url(../img/laboratoria.svg);
   background-size:contain;
 }
 .open .logo,
@@ -166,25 +168,101 @@ nav.solid #logo .logo {
 }
 
 /*ESTUDIANTES*/
+h1 {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  margin-top: 100px;
+}
 
+li {
+  list-style: none;
+  margin: -4px;
+  padding: 0;
+  width: 400px;
+  height: 400px;
+  display:inline-block;
+}
 
-#promocion{
-  margin-top: 80px;
-  margin-left: 50px;
-  margin-right: 50px;
-	display: grid; 
-  grid-template-columns: 490px 490px 490px; 
-  background-color: #fff; 
-  color: #444;
+figure {
+  margin:0;
+}
+
+ul {
+  padding-left: 0;
+}
+
+#promocion {
+  margin-left: 70px;
+}
+
+span.nombre {
+  margin: 0;
+  width: 400px;
+  height: 100px;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  margin-left: -50%;
+  margin-top: 50%;
+  font-size: 1rem;
+  color:rgba(252, 193, 17, 1);
+  font-size: 40px;
+  opacity: 0;
+  color:white;
+  -webkit-text-fill-color:white;
+  position:absolute;
+  z-index: 1000;
+  transition: 1s;
+}
+
+figure:hover span.nombre {
+  opacity:1;
+  transition: 1s;
+}
+
+img.image {
+  display:inline-block;
+  text-align: center;
+  width:400px;
+  height:400px;
+  cursor:pointer;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  transition: 0.45s ease-in-out;
 
 }
 
-img {
-  padding: 0px;
-	margin: 0px;
+img.image:hover {
+  cursor:pointer;
+  opacity:0.5;
+  -webkit-transform:scale(1.1); 
+  transition: background-color ease 0.45s;
+}
+
+div.coder {
+  display:inline-block;
+  text-align: center;
+  width:400px;
+  height:400px;
+  cursor:pointer;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  transition: 0.45s;
+  background-color: rgba(252, 193, 17, 1);
+  overflow: hidden;
+}
+
+div.coder:hover {
+  z-index: 1000;
+  transition: background-color ease 0.45s;
+}
+
+div#promocion, ul, figure {
   display: inline-block;
-  width: 490px;
-  height: 490px;
-	position: relative;
-  box-sizing: content-box;
+}
+
+div#promocion, ul#salida {
+  min-height: 100%;
+  position: relative;
 }
