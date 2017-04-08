@@ -41,6 +41,7 @@ nav.open {
   -o-transition: none;
   -moz-transition: none;
   -webkit-transition: none;
+  opacity: 1;
 }
 
 nav ul {
@@ -229,6 +230,7 @@ img.image {
   margin: 0;
   position: relative;
   transition: 0.45s ease-in-out;
+  overflow: hidden;
 
 }
 
@@ -256,6 +258,8 @@ div.coder {
 div.coder:hover {
   z-index: 1000;
   transition: background-color ease 0.45s;
+  overflow: hidden;
+
 }
 
 div#promocion, ul, figure {
@@ -265,4 +269,11 @@ div#promocion, ul, figure {
 div#promocion, ul#salida {
   min-height: 100%;
   position: relative;
+}
+footer {
+  height: 200px;
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+  text-align: center;
+  background-color: lightgray;
 }
